@@ -1,0 +1,15 @@
+# Never commit real partition dumps or extracted keyboxes (device private keys)
+dumps/*.bin
+dumps/*.img
+dumps/*.xml
+dumps/*_keybox_snippet.txt
+dumps/*_validity.json
+!dumps/.gitkeep
+!dumps/README.md
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+__pycache__/
+*.pyc

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EXAMPLE ONLY - not a real device keybox. Structure reference for typical MTK Android attestation keyboxes. -->
+<AndroidAttestation>
+    <NumberOfKeyboxes>1</NumberOfKeyboxes>
+    <Keybox DeviceID="EXAMPLE.DEVICE.id000000000">
+        <Key algorithm="ecdsa">
+            <PrivateKey format="pem">
+-----BEGIN EC PRIVATE KEY-----
+REDACTED_PRIVATE_KEY_HEX_LINES
+-----END EC PRIVATE KEY-----
+            </PrivateKey>
+            <CertificateChain>
+                <NumberOfCertificates>3</NumberOfCertificates>
+                <Certificate format="pem">
+-----BEGIN CERTIFICATE-----
+REDACTED_BASE64_CERTIFICATE
+-----END CERTIFICATE-----
+                </Certificate>
+            </CertificateChain>
+        </Key>
+    </Keybox>
+</AndroidAttestation>
